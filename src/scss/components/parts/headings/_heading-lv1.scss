@@ -1,0 +1,17 @@
+// 見出し・レベル１
+
+.heading-lv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    margin-right: 8px;
+    font-size: 30px;
+    color: $c-accent;
+  }
+
+  &__en {
+    margin-left: 16px;
+  }
+}

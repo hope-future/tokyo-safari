@@ -1,0 +1,54 @@
+<%
+  if (typeof class_btn === 'undefined') {
+    class_btn = '';
+  }
+
+  if (typeof class_gnav === 'undefined') {
+    class_gnav = '';
+  }
+
+  if (typeof data === 'undefined') {
+    data = {
+      test1: 'default',
+      test2: 'default'
+    };
+  }
+%>
+
+
+<button class="<%= class_btn %> gnav-btn" id="js-gnav-btn" title="グローバルナビゲーションの開閉">
+  <span class="gnav-btn__bar"></span>
+</button>
+
+
+<nav class="<%= class_gnav %> gnav">
+  <ul class="gnav__list">
+    <li class="gnav__item">
+      <a class="gnav__link" href="animal.html">
+        <span class="material-icons gnav__icon">pets</span>
+        動物紹介
+      </a>
+    </li>
+
+    <li class="gnav__item">
+      <a class="gnav__link" href="guide.html">
+        <span class="material-icons gnav__icon">explore</span>
+        パークガイド
+      </a>
+    </li>
+
+    <li class="gnav__item">
+      <a class="gnav__link" href="price.html">
+        <span class="material-icons gnav__icon">confirmation_number</span>
+        料金・チケット
+      </a>
+    </li>
+
+    <li class="gnav__item">
+      <a class="gnav__link" href="access.html">
+        <span class="material-icons gnav__icon gnav__icon--access">commute</span>
+        交通アクセス
+      </a>
+    </li>
+  </ul>
+</nav>

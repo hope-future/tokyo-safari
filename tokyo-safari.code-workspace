@@ -1,0 +1,13 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../サンプルデータ/HTML5・CSS3/HTML＋CSS実践講座/chan-pro04/Lesson6/Lesson6_fix"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Lesson5_fix"
+  }
+}

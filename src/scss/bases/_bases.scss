@@ -1,0 +1,34 @@
+// ベース
+
+// ress.scss
+@import "_ress.scss";
+
+
+
+body {
+  padding-top: 67px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: $c-black;
+
+  @include mq(md-min) {
+    padding-top: 0;
+  }
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+  color: $c-black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}

@@ -1,0 +1,43 @@
+// セクション・ニュース
+
+.section-news {
+  padding: 30px 16px 34px;
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    border-top: dashed 1px $c-beige;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    border-bottom: dashed 1px #efe1c5;
+
+    &-link {
+      display: flex;
+      padding: 8px 0;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    &-date {
+      margin-right: 24px;
+      word-break: keep-all;
+      font-size: 14px;
+    }
+  }
+
+
+  @include mq(md-min) {
+    padding: 50px 16px;
+
+    &__item {
+
+      &-date {
+        margin-right: 48px;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'Cart'}) %>
+
+<body class="cart">
+
+<%- include('components/common/_header') %>
+
+
+<div class="breadcrumb">
+  <ul class="breadcrumb__list">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="index.html">Home</a>
+    </li>
+
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="online-shop.html">Online Shop</a>
+    </li>
+
+    <li class="breadcrumb__item">
+      Cart
+    </li>
+  </ul>
+</div>
+
+<main class="main">
+
+  <section class="section-cart l-container-md">
+    <h2 class="section-cart__heading heading-primary">Cart</h2>
+
+    <ul class="section-cart__list">
+      <li class="section-cart__item">
+        <a class="section-cart__item-link" href="detail.html">
+          <picture class="section-cart__item-thumbnail">
+            <source type="image/webp" srcset="images/card/flower02.webp">
+
+            <img class="section-cart__item-image" src="images/card/flower02.jpg" alt="">
+          </picture>
+
+          <div class="section-cart__item-body">
+            <h3 class="section-cart__item-heading">パープル系ドライフラワー</h3>
+
+            <p class="section-cart__item-price">¥3,800</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="section-cart__item">
+        <a class="section-cart__item-link" href="detail.html">
+          <picture class="section-cart__item-thumbnail">
+            <source type="image/webp" srcset="images/card/flower05.webp">
+
+            <img class="section-cart__item-image" src="images/card/flower05.jpg" alt="">
+          </picture>
+
+          <div class="section-cart__item-body">
+            <h3 class="section-cart__item-heading">スタッフ おまかせアレンジ</h3>
+
+            <p class="section-cart__item-price">¥3,800</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="section-cart__item">
+        <a class="section-cart__item-link" href="detail.html">
+          <picture class="section-cart__item-thumbnail">
+            <source type="image/webp" srcset="images/card/flower01.webp">
+
+            <img class="section-cart__item-image" src="images/card/flower01.jpg" alt="">
+          </picture>
+
+          <div class="section-cart__item-body">
+            <h3 class="section-cart__item-heading">ひまわりのアレンジ花束</h3>
+
+            <p class="section-cart__item-price">¥3,800</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <p class="section-cart__price-shipping">送料<b class="section-cart__price-lg">¥500</b></p>
+
+    <p class="section-cart__price-total">合計<b class="section-cart__price-lg">¥11,900</b></p>
+  </section>
+
+  <section class="section-login">
+    <h2 class="section-login__heading heading-primary">Member Login</h2>
+
+    <form class="section-login__form form-login" action="#">
+      <p class="form-login__item">
+        <label class="form-login__item-name" for="member-id">会員ID/メールアドレス</label>
+
+        <input class="form-login__input" id="member-id" type="text" name="member-id" placeholder="テキストが入ります。" required autocapitalize="none" autocorrect="off" spellcheck="false">
+      </p>
+
+      <p class="form-login__item">
+        <label class="form-login__item-name" for="member-password">パスワード</label>
+
+        <input class="form-login__input" id="member-password" type="password" name="member-password" required>
+      </p>
+
+      <button class="form-login__btn btn-primary" type="button">ログインして購入する</button>
+
+      <a href="#" class="form-login__link">新規会員登録して購入する</a>
+    </form>
+  </section>
+
+</main>
+
+<div class="breadcrumb">
+  <ul class="breadcrumb__list">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="index.html">Home</a>
+    </li>
+
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="online-shop.html">Online Shop</a>
+    </li>
+
+    <li class="breadcrumb__item">
+      Cart
+    </li>
+  </ul>
+</div>
+
+
+<%- include('components/common/_footer') %>
+
+<%- include('components/common/_script.ejs') %>
+
+</body>
+</html>

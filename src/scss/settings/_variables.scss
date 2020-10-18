@@ -1,0 +1,29 @@
+// 変数
+
+// カラー
+$c-main: #459209;
+$c-accent: #efdd34;
+$c-black: #333;
+$c-white: #fff;
+$c-beige: #efe1c5;
+$c-beige-light: #faf5e9;
+
+
+// フォント
+$font-sans: 'Noto Sans JP', sans-serif;
+$font-sans-en: 'Lato', sans-serif;
+
+
+// ブレイクポイント
+$breakpoints: (
+  'xs-min': '(min-width: 375px)',
+  'xs-max': '(max-width: 374px)',
+  'sm-min': '(min-width: 576px)',
+  'sm-max': '(max-width: 575px)',
+  'md-min': '(min-width: 768px)',
+  'md-max': '(max-width: 767px)',
+  'lg-min': '(min-width: 992px)',
+  'lg-max': '(max-width: 991px)',
+  'xl-min': '(min-width: 1200px)',
+  'xl-max': '(max-width: 1199px)'
+);

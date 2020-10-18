@@ -1,0 +1,40 @@
+// セクション・イベント
+
+.section-event {
+  padding: 30px 16px 34px;
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__cards {
+    max-width: 500px;
+    margin: 0 auto 32px;
+  }
+
+  &__card {
+
+    & + & {
+      margin-top: 32px;
+    }
+  }
+
+
+  @include mq(md-min) {
+    padding: 50px 24px;
+
+    &__cards {
+      max-width: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__card {
+      width: calc((100% - 18px * 2) / 3);
+
+      & + & {
+        margin-top: 0;
+      }
+    }
+  }
+}

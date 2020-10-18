@@ -1,0 +1,29 @@
+// Swiper・共通
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+
+  &::after {
+    font-family: "Material Icons";
+    font-size: 60px;
+    color: $c-main;
+  }
+}
+
+.swiper-button-next {
+
+  &::after {
+    content: "navigate_next";
+  }
+}
+
+.swiper-button-prev {
+
+  &::after {
+    content: "navigate_before";
+  }
+}

@@ -1,0 +1,206 @@
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'トップページ'}) %>
+
+<body class="top">
+
+<%- include('components/common/_header') %>
+
+
+<main class="main">
+  <div class="swiper-container swiper-keyvisual">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width: 575px)" srcset="images/main-sp_01.jpg">
+
+          <img src="images/main_01.jpg" alt="写真：ライオンのオス２頭">
+        </picture>
+      </div><!-- /.swiper-slide -->
+
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width: 575px)" srcset="images/main-sp_02.jpg">
+
+          <img src="images/main_02.jpg" alt="写真：フラミンゴの群">
+        </picture>
+      </div><!-- /.swiper-slide -->
+
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width: 575px)" srcset="images/main-sp_03.jpg">
+
+          <img src="images/main_03.jpg" alt="写真：どんぐりをほおばるリス">
+        </picture>
+      </div><!-- /.swiper-slide -->
+    </div><!-- /.swiper-wrapper -->
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div><!-- /.swiper-container.swiper-top -->
+
+  <section class="section-event l-container-lg">
+    <h2 class="section-event__heading heading-lv1">
+      <span class="heading-lv1__icon material-icons">sms_failed</span>
+      イベント情報
+      <span class="heading-lv1__en">Events</span>
+    </h2>
+
+    <div class="section-event__cards">
+      <div class="section-event__card card-event">
+        <a href="#" class="card-event__link">
+          <figure class="card-event__figure">
+            <img class="card-event__image" src="images/event_01.jpg" alt="写真：草原の中のサファリカー">
+          </figure>
+
+          <div class="card-event__body">
+            <h3 class="card-event__heading">サファリバスツアー</h3>
+
+            <p class="card-event__text">野生の動物をたくさん見られる、大迫力の全面金網バスで敷地内をぐるっと1周！</p>
+          </div>
+        </a>
+      </div><!-- /.section-event__card.card-event -->
+
+      <div class="section-event__card card-event">
+        <a href="#" class="card-event__link">
+          <figure class="card-event__figure">
+            <img class="card-event__image" src="images/event_02.jpg" alt="写真：羊">
+          </figure>
+
+          <div class="card-event__body">
+            <h3 class="card-event__heading">牧場広場で酪農体験</h3>
+
+            <p class="card-event__text">併設の牧場で乳搾り体験ができます。牛や羊と触れ合える広場です。</p>
+          </div>
+        </a>
+      </div><!-- /.section-event__card.card-event -->
+
+      <div class="section-event__card card-event">
+        <a href="#" class="card-event__link">
+          <figure class="card-event__figure">
+            <img class="card-event__image" src="images/event_03.jpg" alt="写真：葉っぱを食べるヤギ">
+          </figure>
+
+          <div class="card-event__body">
+            <h3 class="card-event__heading">餌やり体験ツアー</h3>
+
+            <p class="card-event__text">飼育員と一緒に餌やり体験ができるツアーです。間近で動物を観察してみましょう。</p>
+          </div>
+        </a>
+      </div><!-- /.section-event__card.card-event -->
+    </div><!-- /.section-event__cards -->
+
+    <a class="section-event__btn btn-more btn-more--center" href="#">
+      もっと見る
+      <span class="btn-more__arrow material-icons">navigate_next</span>
+    </a>
+  </section>
+
+  <section class="section-news l-container-md">
+    <h2 class="section-news__heading heading-lv1">
+      <span class="heading-lv1__icon material-icons">fiber_new</span>
+      新着情報
+      <span class="heading-lv1__en">News</span>
+    </h2>
+
+    <ul class="section-news__list">
+      <li class="section-news__item">
+        <a class="section-news__item-link" href="#">
+          <time class="section-news__item-date" datetime="2020-05-24">2020年5月24日</time>
+          トラの赤ちゃんが生まれました！
+        </a>
+      </li>
+
+      <li class="section-news__item">
+        <a class="section-news__item-link" href="#">
+          <time class="section-news__item-date" datetime="2020-05-20">2020年5月20日</time>
+          東京サファリパークのテレビ放送のお知らせ
+        </a>
+      </li>
+
+      <li class="section-news__item">
+        <a class="section-news__item-link" href="#">
+          <time class="section-news__item-date" datetime="2020-05-18">2020年5月18日</time>
+          営業時間変更に関するお知らせ
+        </a>
+      </li>
+
+      <li class="section-news__item">
+        <a class="section-news__item-link" href="#">
+          <time class="section-news__item-date" datetime="2020-05-10">2020年5月10日</time>
+          インスタグラム、はじめました！
+        </a>
+      </li>
+
+      <li class="section-news__item">
+        <a class="section-news__item-link" href="#">
+          <time class="section-news__item-date" datetime="2020-04-24">2020年4月24日</time>
+          ホームページをリニューアルしました！
+        </a>
+      </li>
+    </ul>
+
+    <a class="section-news__btn btn-more btn-more--center" href="#">
+      もっと見る
+      <span class="btn-more__arrow material-icons">navigate_next</span>
+    </a>
+  </section>
+
+  <section class="section-animal">
+    <h2 class="section-animal__heading heading-lv1">
+      <span class="heading-lv1__icon material-icons">pets</span>
+      動物紹介
+      <span class="heading-lv1__en">Animals</span>
+    </h2>
+
+    <div class="section-animal__swiper swiper-animal-outer">
+
+      <div class="swiper-container swiper-animal">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="swiper-animal__link" href="#">
+              <img class="swiper-animal__image" src="images/animal_01.jpg" alt="写真：キツネ">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="swiper-animal__link" href="#">
+              <img class="swiper-animal__image" src="images/animal_02.jpg" alt="レッサーパンダ">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="swiper-animal__link" href="#">
+              <img class="swiper-animal__image" src="images/animal_03.jpg" alt="写真：キリン">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="swiper-animal__link" href="#">
+              <img class="swiper-animal__image" src="images/animal_04.jpg" alt="リャマ">
+            </a>
+          </div>
+        </div><!-- /.swiper-wrapper -->
+      </div><!-- /.swiper-container.swiper-animal -->
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div><!-- /.swiper-animal-outer -->
+
+    <a class="section-news__btn btn-more btn-more--center" href="#">
+      もっと見る
+      <span class="btn-more__arrow material-icons">navigate_next</span>
+    </a>
+  </section>
+</main>
+
+
+<%- include('components/common/_footer.ejs') %>
+
+<%- include('components/common/_script') %>
+
+</body>
+</html>

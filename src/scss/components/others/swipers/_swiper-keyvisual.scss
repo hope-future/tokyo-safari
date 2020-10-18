@@ -1,0 +1,36 @@
+// Swiper・キービジュアル
+
+.swiper-keyvisual {
+  padding-bottom: 35px;
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+
+    &-active {
+      background-color: $c-main;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: calc(50% - 16px);
+  }
+
+  &.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+  }
+
+
+  @include mq(sm-min) {
+
+    padding-bottom: 42px;
+
+    img {
+      width: 100%;
+      height: 540px;
+      object-fit: cover;
+      font-family: "object-fit: cover;";
+    }
+  }
+}

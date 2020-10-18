@@ -1,0 +1,14 @@
+// カード・イベント
+
+.card-event {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  &__body {
+    padding: 8px 16px 16px;
+  }
+
+  &__heading {
+    margin-bottom: 0.25em;
+    font-size: 18px;
+  }
+}

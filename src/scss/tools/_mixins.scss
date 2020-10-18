@@ -1,0 +1,28 @@
+// ミックスイン
+
+// ブレイクポイント
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+@include mq(lg-min) {
+  .test1 {
+    color: red;
+  }
+}
+
+
+@mixin mq-min($width: 768) {
+  @media (min-width: $width + px) {
+    @content;
+  }
+}
+
+@include mq-min() {
+  .test2 {
+    color: blue;
+  }
+}

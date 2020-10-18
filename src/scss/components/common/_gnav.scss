@@ -1,0 +1,135 @@
+// グローバルナビゲーション
+
+
+// ボタン
+
+.gnav-btn {
+  width: 27px;
+  height: 22px;
+
+  &__bar {
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: $c-black;
+    transition: .3s;
+
+    .is-open-gnav & {
+      background-color: initial;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $c-black;
+      transition: .3s;
+    }
+
+    &::before {
+      top: -10px;
+
+      .is-open-gnav & {
+        top: 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    &::after {
+      top: 10px;
+
+      .is-open-gnav & {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+
+  @include mq(md-min) {
+    display: none;
+  }
+}
+
+
+
+// ナビゲーション
+
+// 画面横幅 767px以下
+@include mq(md-max) {
+  .gnav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: calc(100% - 62.6px);
+    margin-top: 62.6px;
+    background-color: $c-white;
+    transition: .5s;
+
+    .is-open-gnav & {
+      left: 0;
+    }
+
+    &__item {
+      border-bottom: solid 1px $c-beige;
+
+      &:first-child {
+        border-top: solid 1px $c-beige;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      padding: 8px 24px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      font-size: 22px;
+      color: $c-main;
+
+      &--access {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
+// 画面横幅 768px以上
+@include mq(md-min) {
+  .gnav {
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+
+      & + & {
+        margin-left: 16px;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      color: $c-main;
+    }
+  }
+}
